@@ -20,6 +20,8 @@
 		CB23CCD31E822C7F0009ED38 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCD01E822C7F0009ED38 /* DateExtension.swift */; };
 		CB23CCD41E822C7F0009ED38 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCD11E822C7F0009ED38 /* FileManagerExtension.swift */; };
 		CB23CCD51E822C7F0009ED38 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCD21E822C7F0009ED38 /* StringExtension.swift */; };
+		CBABFE351E8232940084A793 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE331E8232940084A793 /* UILabelExtension.swift */; };
+		CBABFE361E8232940084A793 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE341E8232940084A793 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		CB23CCD01E822C7F0009ED38 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		CB23CCD11E822C7F0009ED38 /* FileManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 		CB23CCD21E822C7F0009ED38 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CBABFE331E8232940084A793 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		CBABFE341E8232940084A793 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,11 +148,29 @@
 		CB23CCCF1E822C7F0009ED38 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CBABFE321E8232850084A793 /* UIElements */,
+				CBABFE311E82324A0084A793 /* Text */,
 				CB23CCD01E822C7F0009ED38 /* DateExtension.swift */,
 				CB23CCD11E822C7F0009ED38 /* FileManagerExtension.swift */,
 				CB23CCD21E822C7F0009ED38 /* StringExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CBABFE311E82324A0084A793 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		CBABFE321E8232850084A793 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				CBABFE331E8232940084A793 /* UILabelExtension.swift */,
+				CBABFE341E8232940084A793 /* UITextFieldExtension.swift */,
+			);
+			name = UIElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,9 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB23CCD41E822C7F0009ED38 /* FileManagerExtension.swift in Sources */,
+				CBABFE361E8232940084A793 /* UITextFieldExtension.swift in Sources */,
 				CB23CCCD1E8228690009ED38 /* README.md in Sources */,
 				CB23CCD51E822C7F0009ED38 /* StringExtension.swift in Sources */,
 				CB23CCD31E822C7F0009ED38 /* DateExtension.swift in Sources */,
+				CBABFE351E8232940084A793 /* UILabelExtension.swift in Sources */,
 				CB23CC9E1E8227D60009ED38 /* ViewController.swift in Sources */,
 				CB23CC9C1E8227D60009ED38 /* AppDelegate.swift in Sources */,
 			);
@@ -537,6 +561,7 @@
 				CB23CCC21E8227D60009ED38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB23CCC31E8227D60009ED38 /* Build configuration list for PBXNativeTarget "SwiftyExtensionTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +570,7 @@
 				CB23CCC51E8227D60009ED38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB23CCC61E8227D60009ED38 /* Build configuration list for PBXNativeTarget "SwiftyExtensionUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +579,7 @@
 				CB23CCC81E8227D60009ED38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
