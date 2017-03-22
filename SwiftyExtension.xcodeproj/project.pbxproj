@@ -163,19 +163,11 @@
 			isa = PBXGroup;
 			children = (
 				CBABFE321E8232850084A793 /* UIElements */,
-				CBABFE311E82324A0084A793 /* Text */,
 				CB23CCD01E822C7F0009ED38 /* DateExtension.swift */,
 				CB23CCD11E822C7F0009ED38 /* FileManagerExtension.swift */,
 				CB23CCD21E822C7F0009ED38 /* StringExtension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		CBABFE311E82324A0084A793 /* Text */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Text;
 			sourceTree = "<group>";
 		};
 		CBABFE321E8232850084A793 /* UIElements */ = {
