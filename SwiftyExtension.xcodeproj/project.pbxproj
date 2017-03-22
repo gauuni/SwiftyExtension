@@ -14,6 +14,9 @@
 		CB23CCA61E8227D60009ED38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB23CCA41E8227D60009ED38 /* LaunchScreen.storyboard */; };
 		CB23CCB11E8227D60009ED38 /* SwiftyExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCB01E8227D60009ED38 /* SwiftyExtensionTests.swift */; };
 		CB23CCBC1E8227D60009ED38 /* SwiftyExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCBB1E8227D60009ED38 /* SwiftyExtensionUITests.swift */; };
+		CB23CCCC1E8228690009ED38 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CB23CCC91E8228690009ED38 /* LICENSE */; };
+		CB23CCCD1E8228690009ED38 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCCA1E8228690009ED38 /* README.md */; };
+		CB23CCCE1E8228690009ED38 /* SwiftyExtension.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB23CCCB1E8228690009ED38 /* SwiftyExtension.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CB23CCB71E8227D60009ED38 /* SwiftyExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB23CCBB1E8227D60009ED38 /* SwiftyExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyExtensionUITests.swift; sourceTree = "<group>"; };
 		CB23CCBD1E8227D60009ED38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB23CCC91E8228690009ED38 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CB23CCCA1E8228690009ED38 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CB23CCCB1E8228690009ED38 /* SwiftyExtension.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftyExtension.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		CB23CC8F1E8227D60009ED38 = {
 			isa = PBXGroup;
 			children = (
+				CB23CCC91E8228690009ED38 /* LICENSE */,
+				CB23CCCA1E8228690009ED38 /* README.md */,
+				CB23CCCB1E8228690009ED38 /* SwiftyExtension.podspec */,
 				CB23CC9A1E8227D60009ED38 /* SwiftyExtension */,
 				CB23CCAF1E8227D60009ED38 /* SwiftyExtensionTests */,
 				CB23CCBA1E8227D60009ED38 /* SwiftyExtensionUITests */,
@@ -234,6 +243,8 @@
 			files = (
 				CB23CCA61E8227D60009ED38 /* LaunchScreen.storyboard in Resources */,
 				CB23CCA31E8227D60009ED38 /* Assets.xcassets in Resources */,
+				CB23CCCC1E8228690009ED38 /* LICENSE in Resources */,
+				CB23CCCE1E8228690009ED38 /* SwiftyExtension.podspec in Resources */,
 				CB23CCA11E8227D60009ED38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB23CCCD1E8228690009ED38 /* README.md in Sources */,
 				CB23CC9E1E8227D60009ED38 /* ViewController.swift in Sources */,
 				CB23CC9C1E8227D60009ED38 /* AppDelegate.swift in Sources */,
 			);
