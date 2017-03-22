@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension String{
+public extension String{
     /*
     Convert string to date
      **/
@@ -21,7 +21,7 @@ extension String{
 }
 
 
-extension Date{
+public extension Date{
     
     /*
      convert date to string

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-extension String{
+public extension String{
     
     /*
      Add path component
@@ -20,7 +20,7 @@ extension String{
     }
 }
 
-extension FileManager{
+public extension FileManager{
 
     //
     // MARK: - Create
