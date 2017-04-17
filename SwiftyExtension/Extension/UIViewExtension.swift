@@ -4,7 +4,10 @@ import UIKit
 
 public extension UIView {
 
-    func setBorder(borderWidth: CGFloat?, borderColor: UIColor?, cornerRadius: CGFloat?){
+    func setBorder(borderWidth: CGFloat?=nil,
+                   borderColor: UIColor?=nil,
+                   cornerRadius: CGFloat?=nil){
+        
         if let borderWidth = borderWidth{
             self.layer.borderWidth = borderWidth
         }
