@@ -6,9 +6,9 @@
 //  Copyright © 2016 CAN. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-extension NSAttributedString {
+public extension NSAttributedString {
     
     // MARK: Return a new NSAttributed title with same attributes 
     func changeText(text: String) -> NSAttributedString {
@@ -16,5 +16,22 @@ extension NSAttributedString {
         return NSAttributedString(string: text, attributes: attributes)
     }
     
+    func addAttribute(name: String, value: Any, at string: String){
+        let range = (self.string as NSString).range(of: string)
+        self.addAttribute(name: name, value: <#T##Any#>, at: <#T##String#>)
+    }
+    
+}
+
+public extension NSMutableAttributedString{
+    
+    func change(string : String, with color: UIColor){
+        self.addAttribute(name: NSForegroundColorAttributeName, value: color, at: string)
+    }
+    
+    func addAttribute(name: String, value: Any, at string: String){
+        let range = (self.string as NSString).range(of: string)
+        self.addAttribute(name, value: value, range: range)
+    }
     
 }

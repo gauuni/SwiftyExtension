@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-enum DeviceType{
+public enum DeviceType{
     case iPhone4, iPhone5, iPhone6, iPhone6Plus, iPad, Undefine
 }
 
-extension UIScreen{
+public extension UIScreen{
     class var height: CGFloat{
         return self.main.bounds.size.height
     }
@@ -23,7 +23,7 @@ extension UIScreen{
     }
 }
 
-extension UIDevice{
+public extension UIDevice{
     
  
     class var isPhone: Bool{
