@@ -15,12 +15,6 @@ public extension NSAttributedString {
         let attributes = self.attributes(at: 0, effectiveRange: nil)
         return NSAttributedString(string: text, attributes: attributes)
     }
-    
-    func addAttribute(name: String, value: Any, at string: String){
-        let range = (self.string as NSString).range(of: string)
-        self.addAttribute(name: name, value: <#T##Any#>, at: <#T##String#>)
-    }
-    
 }
 
 public extension NSMutableAttributedString{
