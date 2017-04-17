@@ -19,6 +19,7 @@ public extension NSAttributedString {
 
 public extension NSMutableAttributedString{
     
+
     func change(string : String, with color: UIColor){
         self.addAttribute(name: NSForegroundColorAttributeName, value: color, at: string)
     }

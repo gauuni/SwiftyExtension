@@ -14,6 +14,8 @@ public extension UIView {
         }
         
         if let cornerRadius = cornerRadius{
+            //Fix ios 10
+            self.layoutIfNeeded()
             self.layer.cornerRadius = cornerRadius
         }
     }
