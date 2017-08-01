@@ -1,4 +1,4 @@
-# TestCocoapod
+# Swifty Extension
 
 [![CI Status](http://img.shields.io/travis/KhoiNguyen/TestCocoapod.svg?style=flat)](https://travis-ci.org/KhoiNguyen/TestCocoapod)
 [![Version](https://img.shields.io/cocoapods/v/TestCocoapod.svg?style=flat)](http://cocoapods.org/pods/TestCocoapod)
@@ -17,7 +17,7 @@ TestCocoapod is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "TestCocoapod"
+pod "SwiftyExtension"
 ```
 
 ## Author
