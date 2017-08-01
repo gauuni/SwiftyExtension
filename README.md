@@ -13,7 +13,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-TestCocoapod is available through [CocoaPods](http://cocoapods.org). To install
+SwiftyExtension is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -26,4 +26,4 @@ KhoiNguyen, nguyenkhoinguyen082444@gmail.com
 
 ## License
 
-TestCocoapod is available under the MIT license. See the LICENSE file for more info.
+SwiftyExtension is available under the MIT license. See the LICENSE file for more info.
