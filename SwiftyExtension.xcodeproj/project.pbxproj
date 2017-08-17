@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21CF81CA1F3026340074E053 /* EnumExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF81C91F3026340074E053 /* EnumExtension.swift */; };
+		21CF81CC1F3026EC0074E053 /* UIAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CF81CB1F3026EC0074E053 /* UIAlertManager.swift */; };
 		CB23CC9C1E8227D60009ED38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CC9B1E8227D60009ED38 /* AppDelegate.swift */; };
 		CB23CC9E1E8227D60009ED38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CC9D1E8227D60009ED38 /* ViewController.swift */; };
 		CB23CCA11E8227D60009ED38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB23CC9F1E8227D60009ED38 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21CF81C91F3026340074E053 /* EnumExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumExtension.swift; sourceTree = "<group>"; };
+		21CF81CB1F3026EC0074E053 /* UIAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertManager.swift; sourceTree = "<group>"; };
 		CB23CC981E8227D60009ED38 /* SwiftyExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB23CC9B1E8227D60009ED38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB23CC9D1E8227D60009ED38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				CB23CCD01E822C7F0009ED38 /* DateExtension.swift */,
 				CB23CCD11E822C7F0009ED38 /* FileManagerExtension.swift */,
 				CB23CCD21E822C7F0009ED38 /* StringExtension.swift */,
+				21CF81C91F3026340074E053 /* EnumExtension.swift */,
+				21CF81CB1F3026EC0074E053 /* UIAlertManager.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21CF81CA1F3026340074E053 /* EnumExtension.swift in Sources */,
 				CB23CCD41E822C7F0009ED38 /* FileManagerExtension.swift in Sources */,
 				CBABFE361E8232940084A793 /* UITextFieldExtension.swift in Sources */,
 				CB23CCCD1E8228690009ED38 /* README.md in Sources */,
@@ -338,6 +345,7 @@
 				CBF192DB1EAC57B1008E2503 /* UIButtonExtension.swift in Sources */,
 				CBABFE3A1E8234740084A793 /* UICollectionViewExtension.swift in Sources */,
 				CBABFE431E82348E0084A793 /* UIViewExtension.swift in Sources */,
+				21CF81CC1F3026EC0074E053 /* UIAlertManager.swift in Sources */,
 				CBABFE3C1E8234740084A793 /* UIImageViewExtension.swift in Sources */,
 				CB23CCD31E822C7F0009ED38 /* DateExtension.swift in Sources */,
 				CBABFE441E82348E0084A793 /* UIViewControllerExtension.swift in Sources */,
