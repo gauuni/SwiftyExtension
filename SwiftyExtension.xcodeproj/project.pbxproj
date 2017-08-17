@@ -29,6 +29,8 @@
 		CBABFE441E82348E0084A793 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE3E1E82348E0084A793 /* UIViewControllerExtension.swift */; };
 		CBABFE451E82348E0084A793 /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE3F1E82348E0084A793 /* NSAttributedStringExtension.swift */; };
 		CBABFE471E82348E0084A793 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE411E82348E0084A793 /* UIScreenExtension.swift */; };
+		CBF192D91EAC573F008E2503 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF192D81EAC573F008E2503 /* UITableViewExtension.swift */; };
+		CBF192DB1EAC57B1008E2503 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF192DA1EAC57B1008E2503 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		CBABFE3E1E82348E0084A793 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		CBABFE3F1E82348E0084A793 /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		CBABFE411E82348E0084A793 /* UIScreenExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
+		CBF192D81EAC573F008E2503 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		CBF192DA1EAC57B1008E2503 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 				CBABFE391E8234740084A793 /* UIImageViewExtension.swift */,
 				CBABFE331E8232940084A793 /* UILabelExtension.swift */,
 				CBABFE341E8232940084A793 /* UITextFieldExtension.swift */,
+				CBF192D81EAC573F008E2503 /* UITableViewExtension.swift */,
+				CBF192DA1EAC57B1008E2503 /* UIButtonExtension.swift */,
 			);
 			name = UIElements;
 			sourceTree = "<group>";
@@ -325,9 +331,11 @@
 				CB23CCD41E822C7F0009ED38 /* FileManagerExtension.swift in Sources */,
 				CBABFE361E8232940084A793 /* UITextFieldExtension.swift in Sources */,
 				CB23CCCD1E8228690009ED38 /* README.md in Sources */,
+				CBF192D91EAC573F008E2503 /* UITableViewExtension.swift in Sources */,
 				CBABFE451E82348E0084A793 /* NSAttributedStringExtension.swift in Sources */,
 				CBABFE3B1E8234740084A793 /* UIImageExtension.swift in Sources */,
 				CB23CCD51E822C7F0009ED38 /* StringExtension.swift in Sources */,
+				CBF192DB1EAC57B1008E2503 /* UIButtonExtension.swift in Sources */,
 				CBABFE3A1E8234740084A793 /* UICollectionViewExtension.swift in Sources */,
 				CBABFE431E82348E0084A793 /* UIViewExtension.swift in Sources */,
 				CBABFE3C1E8234740084A793 /* UIImageViewExtension.swift in Sources */,

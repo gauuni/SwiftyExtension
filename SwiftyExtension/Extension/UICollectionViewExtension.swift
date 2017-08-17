@@ -13,12 +13,7 @@ public extension UICollectionView {
         let nib = UINib(nibName: identifier, bundle: nil)
         self.register(nib, forCellWithReuseIdentifier: identifier)
     }
+    
 }
 
-public extension UITableView{
-    func registerCellNib(cellClass: AnyClass) {
-        let identifier = String.className(aClass: cellClass)
-        let nib = UINib(nibName: identifier, bundle: nil)
-        self.register(nib, forCellReuseIdentifier: identifier)
-    }
-}
+

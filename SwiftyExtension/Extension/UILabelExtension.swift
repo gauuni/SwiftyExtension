@@ -23,17 +23,28 @@ public extension UILabel {
         self.attributedText = attributedString
     }
     
+    func set(text: String = "",
+             textColor: UIColor = UIColor.black,
+             textAlignment: NSTextAlignment = .left,
+             font: UIFont){
+        self.set(text: text,
+                 textColor: textColor,
+                 textAlignment: textAlignment,
+                 fontName: font.fontName,
+                 fontSize: font.pointSize)
+    }
     
-    func setText(text: String="",
-                 withColor color: UIColor = UIColor.black,
+    func set(text: String="",
+                 textColor: UIColor = UIColor.black,
                  textAlignment: NSTextAlignment = .left,
                  fontName: String="Lato-Regular",
                  fontSize: CGFloat=UIFont.labelFontSize){
         self.text = text
-        self.textColor = color
+        self.textColor = textColor
         self.textAlignment = textAlignment
         self.font = UIFont(name: fontName, size: fontSize)
     }
+
     
     func add(target: AnyObject, action: Selector){
         let tapGesture = UITapGestureRecognizer(target: target, action: action)
