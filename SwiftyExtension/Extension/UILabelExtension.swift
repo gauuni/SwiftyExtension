@@ -17,9 +17,9 @@ public extension UILabel {
     func setTextWithCustomCharacterSpacing(text: String, spacing: CGFloat){
         let attributedString = NSMutableAttributedString(string: text)
         attributedString.addAttribute(
-            NSKernAttributeName,
+            NSAttributedStringKey.kern,
             value: CGFloat(spacing),
-            range: NSRange(location: 0, length: text.characters.count))
+            range: NSRange(location: 0, length: text.count))
         self.attributedText = attributedString
     }
     

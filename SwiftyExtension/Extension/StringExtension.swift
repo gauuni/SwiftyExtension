@@ -13,7 +13,7 @@ public extension String {
      get length of string
      **/
     var length: Int {
-        return self.characters.count
+        return self.count
     }
     
     subscript (i: Int) -> Character {
@@ -31,7 +31,7 @@ public extension String {
         
         let start = self.index(startIndex, offsetBy: r.lowerBound)
         let end = self.index(start, offsetBy: r.upperBound - r.lowerBound)
-        return self[Range.init(uncheckedBounds: (lower: start, upper: end))]
+        return String(self[Range.init(uncheckedBounds: (lower: start, upper: end))])
     }
     
     //
@@ -44,7 +44,8 @@ public extension String {
      - returns: Substring value
      */
     func substringFrom(index: Int) -> String {
-        return self.substring(from: self.index(startIndex, offsetBy: index))
+        let advancedIndex = self.index(startIndex, offsetBy: index)
+        return String(self[advancedIndex...])
     }
     
     /**
@@ -55,7 +56,8 @@ public extension String {
      - returns: Substring value
      */
     func substringTo(index: Int) -> String {
-        return self.substring(to: self.index(startIndex, offsetBy: index))
+        let advancedIndex = self.index(startIndex, offsetBy: index)
+        return String(self[...advancedIndex])
     }
     
     /*
@@ -77,14 +79,14 @@ public extension String {
     func widthWithConstrainedHeight(height: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: height)
         
-        let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
         
         return ceil(boundingBox.width)
     }
 
     func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
-        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
         
         return boundingBox.height
     }
@@ -97,8 +99,8 @@ public extension String {
      **/
     func underlineText(color: UIColor) -> NSAttributedString{
         let titleString = NSMutableAttributedString(string: self)
-        titleString.addAttribute(NSUnderlineStyleAttributeName, value: NSUnderlineStyle.styleSingle.rawValue, range: NSMakeRange(0, self.characters.count))
-        titleString.addAttribute(NSForegroundColorAttributeName, value: color, range: NSMakeRange(0, self.characters.count))
+        titleString.addAttribute(NSAttributedStringKey.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: NSMakeRange(0, self.count))
+        titleString.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: NSMakeRange(0, self.count))
         return titleString
     }
     

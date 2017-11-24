@@ -15,7 +15,7 @@ public extension UITextField {
      Set custom color for placeholder
      **/
     func setPlaceHolderText(placeHolder: String, withColor color: UIColor = UIColor.black){
-        self.attributedPlaceholder = NSAttributedString(string: placeHolder, attributes: [NSForegroundColorAttributeName: color])
+        self.attributedPlaceholder = NSAttributedString(string: placeHolder, attributes: [NSAttributedStringKey.foregroundColor: color])
     }
     
     func setText(text: String="", withColor color: UIColor = UIColor.black, textAlignment: NSTextAlignment = .left, fontSize: CGFloat=UIFont.labelFontSize){
