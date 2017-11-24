@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SwiftyExtension"
-  s.version      = "1.0.6"
+  s.version      = "1.1.0"
   s.summary      = "A helper for swifter."
 
   # This description is used to generate tags and improve search results.
