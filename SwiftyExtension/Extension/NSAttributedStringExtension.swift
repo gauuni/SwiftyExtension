@@ -20,12 +20,12 @@ public extension NSAttributedString {
 public extension NSMutableAttributedString{
     
     func change(string : String, with color: UIColor){
-        self.addAttribute(name: NSForegroundColorAttributeName, value: color, at: string)
+        self.addAttribute(name: NSAttributedStringKey.foregroundColor.rawValue, value: color, at: string)
     }
     
     func addAttribute(name: String, value: Any, at string: String){
         let range = (self.string as NSString).range(of: string)
-        self.addAttribute(name, value: value, range: range)
+        self.addAttribute(NSAttributedStringKey(rawValue: name), value: value, range: range)
     }
     
 }
