@@ -61,4 +61,26 @@ public extension Date{
         let second = comp.second ?? 0
         return (hour, minute, second)
     }
+    
+    func add(value: Int, to component: Calendar.Component) -> Date?{
+        var dateComponent = DateComponents()
+        
+        switch component {
+        case .second:
+            dateComponent.second = value
+        case .minute:
+            dateComponent.minute = value
+        case .hour:
+            dateComponent.hour = value
+        case .day:
+            dateComponent.day = value
+        case .month:
+            dateComponent.month = value
+        case .year:
+            dateComponent.year = value
+        default: break
+        }
+        
+        return Calendar.current.date(byAdding: dateComponent, to: self)
+    }
 }
