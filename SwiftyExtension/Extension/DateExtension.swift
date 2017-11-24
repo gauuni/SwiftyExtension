@@ -53,14 +53,16 @@ public extension Date{
         return self.component.s
     }
     
-    var component: (h: Int, m: Int, s: Int){
-        let calendar = Calendar.current
-        let comp = calendar.dateComponents([.hour, .minute, .second], from: self)
-        let hour = comp.hour ?? 0
-        let minute = comp.minute ?? 0
-        let second = comp.second ?? 0
-        return (hour, minute, second)
-    }
+        var component: (weekday: Int, h: Int, m: Int, s: Int){
+            let calendar = Calendar.current
+            let comp = calendar.dateComponents([.weekday, .hour, .minute, .second], from: self)
+            let hour = comp.hour ?? 0
+            let minute = comp.minute ?? 0
+            let second = comp.second ?? 0
+            let weekday = comp.weekday ?? 0
+            return (weekday, hour, minute, second)
+        }
+
     
     func add(value: Int, to component: Calendar.Component) -> Date?{
         var dateComponent = DateComponents()
