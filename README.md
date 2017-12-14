@@ -12,6 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 Version 1.1.1 or greater: Swift 4
+
 Version 1.1.0 or less: Swift 3
 
 ## Installation
