@@ -6,5 +6,4 @@
 //  Copyright © 2017 Sohda. All rights reserved.
 //
 
-#import <CommonCrypto/CommonCrypto.h>
 
