@@ -40,10 +40,8 @@ public extension UIDevice{
             return .iPhone6
         case DeviceDimensions.iPhone6Plus.height:
             return .iPhone6Plus
-        case DeviceDimensions.iPad.height:
-            return .iPad
         default:
-            return .Undefine
+            return .iPad
         }
     }
 }

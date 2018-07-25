@@ -25,6 +25,8 @@
 		CB563363210818C000F8D78A /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB563362210818C000F8D78A /* TimeIntervalExtension.swift */; };
 		CB563365210818FB00F8D78A /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB563364210818FB00F8D78A /* UIColor+Utilities.swift */; };
 		CB56336821081A9600F8D78A /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56336721081A9600F8D78A /* ArrayExtension.swift */; };
+		CB56336A21081FCF00F8D78A /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56336921081FCF00F8D78A /* UIDevice.swift */; };
+		CB56336D2108211300F8D78A /* NSNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56336C2108211300F8D78A /* NSNumberExtension.swift */; };
 		CBABFE351E8232940084A793 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE331E8232940084A793 /* UILabelExtension.swift */; };
 		CBABFE361E8232940084A793 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE341E8232940084A793 /* UITextFieldExtension.swift */; };
 		CBABFE3A1E8234740084A793 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE371E8234740084A793 /* UICollectionViewExtension.swift */; };
@@ -81,6 +83,8 @@
 		CB563364210818FB00F8D78A /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
 		CB5633662108196400F8D78A /* SwiftyExtension-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftyExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		CB56336721081A9600F8D78A /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		CB56336921081FCF00F8D78A /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		CB56336C2108211300F8D78A /* NSNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumberExtension.swift; sourceTree = "<group>"; };
 		CBABFE331E8232940084A793 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		CBABFE341E8232940084A793 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		CBABFE371E8234740084A793 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 				21CF81C91F3026340074E053 /* EnumExtension.swift */,
 				21CF81CB1F3026EC0074E053 /* UIAlertManager.swift */,
 				CB563362210818C000F8D78A /* TimeIntervalExtension.swift */,
+				CB56336C2108211300F8D78A /* NSNumberExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 		CBABFE321E8232850084A793 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				CB56336921081FCF00F8D78A /* UIDevice.swift */,
 				CB56336721081A9600F8D78A /* ArrayExtension.swift */,
 				CB563364210818FB00F8D78A /* UIColor+Utilities.swift */,
 				CBABFE3D1E82348E0084A793 /* UIViewExtension.swift */,
@@ -356,6 +362,8 @@
 				CBABFE451E82348E0084A793 /* NSAttributedStringExtension.swift in Sources */,
 				CBABFE3B1E8234740084A793 /* UIImageExtension.swift in Sources */,
 				CB23CCD51E822C7F0009ED38 /* StringExtension.swift in Sources */,
+				CB56336A21081FCF00F8D78A /* UIDevice.swift in Sources */,
+				CB56336D2108211300F8D78A /* NSNumberExtension.swift in Sources */,
 				CBF192DB1EAC57B1008E2503 /* UIButtonExtension.swift in Sources */,
 				CBABFE3A1E8234740084A793 /* UICollectionViewExtension.swift in Sources */,
 				CBABFE431E82348E0084A793 /* UIViewExtension.swift in Sources */,
