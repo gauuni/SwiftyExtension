@@ -67,12 +67,26 @@ public extension String {
         return (self as NSString).range(of: string)
     }
     
+    func replace(target: String, withString: String) -> String{
+        return self.replacingOccurrences(of: target, with: withString)
+    }
+    
+    func encode(characters: CharacterSet = .urlQueryAllowed) -> String{
+        return self.addingPercentEncoding(withAllowedCharacters: characters) ?? self
+    }
+    
+    func decode() -> String{
+        return self.removingPercentEncoding ?? self
+    }
+    
     /*
      get string from class name
      **/
     static func className(aClass: AnyClass) -> String {
         return NSStringFromClass(aClass).components(separatedBy: ".").last!
     }
+    
+    
     
     //
     // MARK: - Calculating
@@ -120,11 +134,15 @@ public extension String {
             return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
         }
     }
-    
-    
-    
 
-    
-    
+    /*
+     Convert string to date
+     **/
+    func date(with custom: String) -> Date?{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = custom
+        
+        return dateFormatter.date(from: self)
+    }
     
 }

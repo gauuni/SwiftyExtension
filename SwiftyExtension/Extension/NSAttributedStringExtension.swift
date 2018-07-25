@@ -19,14 +19,30 @@ public extension NSAttributedString {
 
 public extension NSMutableAttributedString{
     
-
     func change(string : String, with color: UIColor){
-        self.addAttribute(name: NSAttributedStringKey.foregroundColor.rawValue, value: color, at: string)
+        self.addAttribute(key: .foregroundColor, value: color, at: string)
     }
     
-    func addAttribute(name: String, value: Any, at string: String){
-        let range = (self.string as NSString).range(of: string)
-        self.addAttribute(NSAttributedStringKey(rawValue: name), value: value, range: range)
+    func addAttribute(key: NSAttributedStringKey, value: Any, at string: String){
+        self.addAttribute(key, value: value, range: self.string.rangeOfAString(string: string))
+    }
+    
+    func addAttribute(spacing: CGFloat, at string: String){
+        self.addAttribute(key: .kern, value: spacing, at: string)
+    }
+    
+    func addAttribute(lineSpacing: CGFloat, alignment: NSTextAlignment, at string: String){
+        // *** Create instance of `NSMutableParagraphStyle`
+        let paragraphStyle = NSMutableParagraphStyle()
+        
+        // *** set LineSpacing property in points ***
+        paragraphStyle.lineSpacing = lineSpacing
+        paragraphStyle.alignment = alignment
+        
+        // *** Apply attribute to string ***
+        self.addAttribute(key: .paragraphStyle,
+                          value: paragraphStyle,
+                          at: string)
     }
     
 }

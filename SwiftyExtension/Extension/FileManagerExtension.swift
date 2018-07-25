@@ -52,12 +52,20 @@ public extension FileManager{
      get path in document directory
      **/
     func documentPath(name: String) -> String{
-        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
-        let documentsDirectory = paths[0]
-        return documentsDirectory.stringByAppendingPathComponent(path: name)
+        let directory = self.directoryPathAt(directory: .documentDirectory)
+        return directory.stringByAppendingPathComponent(path: name)
     }
     
-
+    func libraryPath(to name: String) -> String{
+        let directory = self.directoryPathAt(directory: .libraryDirectory)
+        return directory.stringByAppendingPathComponent(path: name)
+    }
+    
+    func directoryPathAt(directory: SearchPathDirectory) -> String {
+        let paths = NSSearchPathForDirectoriesInDomains(directory, .userDomainMask, true)
+        let directory = paths[0]
+        return directory
+    }
     
     //
     // MARK: Common

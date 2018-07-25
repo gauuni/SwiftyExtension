@@ -8,18 +8,6 @@
 
 import UIKit
 
-public extension String{
-    /*
-    Convert string to date
-     **/
-    func date(with custom: String) -> Date?{
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = custom
-        
-        return dateFormatter.date(from: self)
-    }
-}
-
 
 public extension Date{
     
@@ -84,5 +72,13 @@ public extension Date{
         }
         
         return Calendar.current.date(byAdding: dateComponent, to: self)
+    }
+    
+    var toTimeInterval: TimeInterval{
+        return self.timeIntervalSince1970
+    }
+    
+    var toTimeIntervalInMiliseconds: TimeInterval{
+        return self.toTimeInterval * 1000
     }
 }

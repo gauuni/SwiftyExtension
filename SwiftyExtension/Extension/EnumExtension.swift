@@ -11,14 +11,14 @@ import UIKit
 import Foundation
 
 // enum which provides a count of its cases
-protocol CaseCountable {
+public protocol CaseCountable {
     static func countCases() -> Int
     static var caseCount : Int { get }
 }
 
 
 // provide a default implementation to count the cases for Int enums assuming starting at 0 and contiguous
-extension CaseCountable where Self : RawRepresentable, Self.RawValue == Int {
+public extension CaseCountable where Self : RawRepresentable, Self.RawValue == Int {
     // count the number of cases in the enum
     static func countCases() -> Int {
         // starting at zero, verify whether the enum can be instantiated from the Int and increment until it cannot

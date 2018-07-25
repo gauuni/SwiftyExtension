@@ -22,6 +22,9 @@
 		CB23CCD31E822C7F0009ED38 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCD01E822C7F0009ED38 /* DateExtension.swift */; };
 		CB23CCD41E822C7F0009ED38 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCD11E822C7F0009ED38 /* FileManagerExtension.swift */; };
 		CB23CCD51E822C7F0009ED38 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23CCD21E822C7F0009ED38 /* StringExtension.swift */; };
+		CB563363210818C000F8D78A /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB563362210818C000F8D78A /* TimeIntervalExtension.swift */; };
+		CB563365210818FB00F8D78A /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB563364210818FB00F8D78A /* UIColor+Utilities.swift */; };
+		CB56336821081A9600F8D78A /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56336721081A9600F8D78A /* ArrayExtension.swift */; };
 		CBABFE351E8232940084A793 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE331E8232940084A793 /* UILabelExtension.swift */; };
 		CBABFE361E8232940084A793 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE341E8232940084A793 /* UITextFieldExtension.swift */; };
 		CBABFE3A1E8234740084A793 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBABFE371E8234740084A793 /* UICollectionViewExtension.swift */; };
@@ -74,6 +77,10 @@
 		CB23CCD01E822C7F0009ED38 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		CB23CCD11E822C7F0009ED38 /* FileManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 		CB23CCD21E822C7F0009ED38 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CB563362210818C000F8D78A /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		CB563364210818FB00F8D78A /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		CB5633662108196400F8D78A /* SwiftyExtension-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftyExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB56336721081A9600F8D78A /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		CBABFE331E8232940084A793 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		CBABFE341E8232940084A793 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		CBABFE371E8234740084A793 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
@@ -170,12 +177,14 @@
 		CB23CCCF1E822C7F0009ED38 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CB5633662108196400F8D78A /* SwiftyExtension-Bridging-Header.h */,
 				CBABFE321E8232850084A793 /* UIElements */,
 				CB23CCD01E822C7F0009ED38 /* DateExtension.swift */,
 				CB23CCD11E822C7F0009ED38 /* FileManagerExtension.swift */,
 				CB23CCD21E822C7F0009ED38 /* StringExtension.swift */,
 				21CF81C91F3026340074E053 /* EnumExtension.swift */,
 				21CF81CB1F3026EC0074E053 /* UIAlertManager.swift */,
+				CB563362210818C000F8D78A /* TimeIntervalExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -183,6 +192,8 @@
 		CBABFE321E8232850084A793 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				CB56336721081A9600F8D78A /* ArrayExtension.swift */,
+				CB563364210818FB00F8D78A /* UIColor+Utilities.swift */,
 				CBABFE3D1E82348E0084A793 /* UIViewExtension.swift */,
 				CBABFE3E1E82348E0084A793 /* UIViewControllerExtension.swift */,
 				CBABFE3F1E82348E0084A793 /* NSAttributedStringExtension.swift */,
@@ -348,6 +359,8 @@
 				CBF192DB1EAC57B1008E2503 /* UIButtonExtension.swift in Sources */,
 				CBABFE3A1E8234740084A793 /* UICollectionViewExtension.swift in Sources */,
 				CBABFE431E82348E0084A793 /* UIViewExtension.swift in Sources */,
+				CB563365210818FB00F8D78A /* UIColor+Utilities.swift in Sources */,
+				CB563363210818C000F8D78A /* TimeIntervalExtension.swift in Sources */,
 				21CF81CC1F3026EC0074E053 /* UIAlertManager.swift in Sources */,
 				CBABFE3C1E8234740084A793 /* UIImageViewExtension.swift in Sources */,
 				CB23CCD31E822C7F0009ED38 /* DateExtension.swift in Sources */,
@@ -356,6 +369,7 @@
 				CBABFE471E82348E0084A793 /* UIScreenExtension.swift in Sources */,
 				CB23CC9E1E8227D60009ED38 /* ViewController.swift in Sources */,
 				CB23CC9C1E8227D60009ED38 /* AppDelegate.swift in Sources */,
+				CB56336821081A9600F8D78A /* ArrayExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +469,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyExtension/Extension/SwiftyExtension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -497,6 +512,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyExtension/Extension/SwiftyExtension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
