@@ -9,6 +9,54 @@ import UIKit
 
 public extension String {
     
+    var firstLetter: String?{
+        guard self.length != 0 else {
+            return nil
+        }
+        
+        guard let firstCharacter = self.first else {
+            return nil
+        }
+        
+        var firstString = String(firstCharacter).plain
+        // in case not alphabet letters
+        if !firstString.latinCharactersOnly { firstString = "#" }
+        
+        return firstString
+    }
+    
+    var plain: String{
+        var string = self.folding(options: .diacriticInsensitive, locale: nil).uppercased()
+        // special case, cannot convert "Đ" character to plain letter
+        string = string.replace(target: "Đ", withString: "D")
+        return string
+    }
+    
+    
+    func replaceCharactersFromSet(characterSet: CharacterSet = .urlPathAllowed, replacementString: String = "_") -> String {
+        return self.components(separatedBy: characterSet.inverted).joined(separator: replacementString)
+    }
+    
+    var stringByDeletePathExtension: String{
+        return (self as NSString).deletingPathExtension
+    }
+    
+    func splitRelativePath(from beginPart: String) -> String?{
+        let range = self.rangeOfAString(string: beginPart)
+        if range.location != NSNotFound{
+            return self.substringFrom(index: range.location+range.length)
+        }
+        return nil
+    }
+    
+    var isAlphanumeric: Bool {
+        return self.rangeOfCharacter(from: CharacterSet.letters.inverted) == nil && self != ""
+    }
+    
+    var latinCharactersOnly: Bool {
+        return self.range(of: "\\P{Latin}", options: .regularExpression) == nil
+    }
+    
     /*
      get length of string
      **/
