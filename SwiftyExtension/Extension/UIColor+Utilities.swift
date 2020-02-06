@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIColor {
-    public class func colorWithHexString(hex : String) -> UIColor {
+    class func colorWithHexString(hex : String) -> UIColor {
         
         return UIColor(red: redComponentFromHexString(hex: hex),
             green: greenComponentFromHexString(hex: hex),
@@ -18,7 +18,7 @@ public extension UIColor {
             alpha: alphaComponentFromHexString(hex: hex))
     }
     
-    public class func hexStringFromColor(color : UIColor) -> String? {
+    class func hexStringFromColor(color : UIColor) -> String? {
         var red : CGFloat = 0
         var green : CGFloat = 0
         var blue : CGFloat = 0
